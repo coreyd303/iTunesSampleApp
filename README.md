@@ -22,7 +22,7 @@ _cmd + u_
 
 * **Testing:** In this app I have used a unit only testing strategy. I prefer to leverage the Quick/Nimble testing framework because of its very human readable syntax and its ease of implementation. Testing relies heavily on mocking and dependency injection enabled by the generous use of protocols within the app. I subscribe to a standard of one declaration to one expectation, meaning that each test is very simple, easy to read, and works to provide documentation for the code. Using this testing strategy creates a robust testing suite that offers a very high degree of code confidence and greatly lowers the probability of bugs.
 
-* Mocks and Stubs are found in their respective folders within the testing target. Mocks are generally generated using Swift Mock Generator.
+* **Mocks and Stubs:** are found in their respective folders within the testing target. Mocks are generally generated using Swift Mock Generator.
 [SwiftMockGeneratorForXcode](https://github.com/seanhenry/SwiftMockGeneratorForXcode)
 
 * **Test Automation:** Test automation is best provided at the time of code delivery and I would generally manage this through an implementation of Circle CI or a similar tool. This can be subscribed to the code repo and can allow an easy way to run tests as a part of the acceptance protocol. If a more localized implementation where required a combination of Fastlane and Xcode server could be configured for this purpose as well.
