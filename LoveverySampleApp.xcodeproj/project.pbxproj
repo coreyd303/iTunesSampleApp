@@ -295,11 +295,11 @@
 		E00D18702496A48B001EED5D /* LoveverySampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				E0884CCA249AB7A6007B40F1 /* TestUtilities */,
-				E0884CA7249AAA90007B40F1 /* Stubs */,
-				E00D18882496A808001EED5D /* Properties */,
 				E00F8DD5249A8E7500970FF3 /* Mocks */,
+				E00D18882496A808001EED5D /* Properties */,
+				E0884CA7249AAA90007B40F1 /* Stubs */,
 				E00D18892496A80F001EED5D /* TestSources */,
+				E0884CCA249AB7A6007B40F1 /* TestUtilities */,
 			);
 			path = LoveverySampleAppTests;
 			sourceTree = "<group>";
@@ -498,31 +498,31 @@
 		E00F8DD5249A8E7500970FF3 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				E00F8DD6249A8E8300970FF3 /* MockWindowProviding.swift */,
-				E00F8DD8249A8EB900970FF3 /* MockRouter.swift */,
-				E00F8DDA249A8EE900970FF3 /* MockAppChildCoordinatorFactory.swift */,
-				E00F8DDC249A908400970FF3 /* MockStartupCoordinator.swift */,
-				E00F8DDF249A90B800970FF3 /* MockMessageFeedCoordinator.swift */,
-				E00F8DE1249A919C00970FF3 /* MockUserDefaults.swift */,
-				E0884C7F249A9A68007B40F1 /* MockMessageService.swift */,
-				E0884C84249A9D69007B40F1 /* MockCoordinator.swift */,
-				E0884C86249A9D9C007B40F1 /* MockBaseCoordinator.swift */,
-				E0884C92249A9F1A007B40F1 /* MockPresentable.swift */,
-				E0884C94249A9F42007B40F1 /* MockNavigationController.swift */,
-				E0884CAA249AAB0C007B40F1 /* MockQueue.swift */,
-				E0884CAC249AACCF007B40F1 /* MockNetworkDispatcher.swift */,
-				E0884CB4249AAEA3007B40F1 /* MockError.swift */,
-				E0884CC2249AB1D6007B40F1 /* MockFilterPickerPresentableFactory.swift */,
-				E0884CC4249AB475007B40F1 /* MockFilterPickerPresentable.swift */,
-				E0884CD3249ABC5E007B40F1 /* MockUserService.swift */,
-				E0884CD5249ABCA7007B40F1 /* MockMessageFeedPresentableFactory.swift */,
-				E0884CD7249ABCD0007B40F1 /* MockMessageFeedChildCoordinatorFactory.swift */,
-				E0884CD9249ABD80007B40F1 /* MockMessageFeedPresentable.swift */,
-				E0884CDB249ABDBA007B40F1 /* MockFilterPickerCoordinator.swift */,
-				E0884CDD249AC133007B40F1 /* MockMessageFeedViewModel.swift */,
 				E0884CDF249AC588007B40F1 /* MockAlertController.swift */,
+				E00F8DDA249A8EE900970FF3 /* MockAppChildCoordinatorFactory.swift */,
+				E0884C86249A9D9C007B40F1 /* MockBaseCoordinator.swift */,
+				E0884C84249A9D69007B40F1 /* MockCoordinator.swift */,
+				E0884CB4249AAEA3007B40F1 /* MockError.swift */,
+				E0884CDB249ABDBA007B40F1 /* MockFilterPickerCoordinator.swift */,
+				E0884CC4249AB475007B40F1 /* MockFilterPickerPresentable.swift */,
+				E0884CC2249AB1D6007B40F1 /* MockFilterPickerPresentableFactory.swift */,
+				E0884CD7249ABCD0007B40F1 /* MockMessageFeedChildCoordinatorFactory.swift */,
+				E00F8DDF249A90B800970FF3 /* MockMessageFeedCoordinator.swift */,
+				E0884CD9249ABD80007B40F1 /* MockMessageFeedPresentable.swift */,
+				E0884CD5249ABCA7007B40F1 /* MockMessageFeedPresentableFactory.swift */,
+				E0884CDD249AC133007B40F1 /* MockMessageFeedViewModel.swift */,
+				E0884C7F249A9A68007B40F1 /* MockMessageService.swift */,
 				E09AA142249AE7AF00B0ED9A /* MockMessageServiceRequestFactory.swift */,
+				E0884C94249A9F42007B40F1 /* MockNavigationController.swift */,
+				E0884CAC249AACCF007B40F1 /* MockNetworkDispatcher.swift */,
+				E0884C92249A9F1A007B40F1 /* MockPresentable.swift */,
+				E0884CAA249AAB0C007B40F1 /* MockQueue.swift */,
+				E00F8DD8249A8EB900970FF3 /* MockRouter.swift */,
+				E00F8DDC249A908400970FF3 /* MockStartupCoordinator.swift */,
 				E09AA14C249BD4B700B0ED9A /* MockTableView.swift */,
+				E00F8DE1249A919C00970FF3 /* MockUserDefaults.swift */,
+				E0884CD3249ABC5E007B40F1 /* MockUserService.swift */,
+				E00F8DD6249A8E8300970FF3 /* MockWindowProviding.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -844,13 +844,13 @@
 		E0884CA7249AAA90007B40F1 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				E0884CA8249AAABF007B40F1 /* StubRequest.swift */,
 				E0884CAE249AAD34007B40F1 /* StubGetMessagesResponse.swift */,
 				E0884CB0249AADA9007B40F1 /* StubMessage.swift */,
 				E0884CB2249AAE2C007B40F1 /* StubMessageDetails.swift */,
+				E09AA146249BCA9B00B0ED9A /* StubPostMessageResponse.swift */,
+				E0884CA8249AAABF007B40F1 /* StubRequest.swift */,
 				E0884CE3249AD15A007B40F1 /* StubUser.swift */,
 				E09AA144249BC93800B0ED9A /* StubUserMessagesResponse.swift */,
-				E09AA146249BCA9B00B0ED9A /* StubPostMessageResponse.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
