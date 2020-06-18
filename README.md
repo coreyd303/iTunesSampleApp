@@ -3,7 +3,7 @@
 This is a sample app demonstrating implementation of MVVM-C architecture, Dependency Injection, Protocol Wrapping, and Unit Testing. This app is intended to provide a code sample.
 
 ## I have provided a short preview video here . . .
-[![](https://youtu.be/QKDO98mTHSE)](https://youtu.be/QKDO98mTHSE "")
+[Preview on Youtube](https://youtu.be/QKDO98mTHSE)
 
 # Notes on Development
 * **Architecture:** The overarching design of this app uses the MVVM-C architecture, also known as the Coordinator pattern. There are many different valid patterns that could have been used to accomplish the required tasks, and some of them would have been must faster to complete, however I believe that the sacrifices would not have justified them. I prefer the Coordinator pattern in the majority of implementations for a number of reasons. The first being that it creates a robust code base that has an inherently low cost of change. Where this to become a production app it would be very easy to change, remove, or add features owing largely to the component style layout of Coordinator based apps. 
