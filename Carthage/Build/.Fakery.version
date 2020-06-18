@@ -1,0 +1,10 @@
+{
+  "commitish" : "4.1.1",
+  "iOS" : [
+    {
+      "name" : "Fakery",
+      "hash" : "299682ae134e63acfee902ee7f8efa40cd1c9cf95197474a9b8d32575d5b7d52",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}
