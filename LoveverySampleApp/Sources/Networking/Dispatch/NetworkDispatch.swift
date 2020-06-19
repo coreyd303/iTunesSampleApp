@@ -7,15 +7,12 @@
 //
 
 import Foundation
-import UIKit
 
 protocol NetworkDispatcher {
     func dispatch(request: RequestData, completion: @escaping ((Result<Data>) -> Void))
 }
 
 struct NetworkDispatcherImplementation: NetworkDispatcher {
-
-    // MARK: - Public
 
     /// dispatch request
     /// - Parameters:

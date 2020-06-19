@@ -653,9 +653,9 @@
 		E021FB532496B454006CA950 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E021FB542496B463006CA950 /* NetworkTarget.swift */,
-				E021FB562496B472006CA950 /* NetworkPath.swift */,
 				E021FB582496B47A006CA950 /* HTTPMethod.swift */,
+				E021FB562496B472006CA950 /* NetworkPath.swift */,
+				E021FB542496B463006CA950 /* NetworkTarget.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

@@ -16,7 +16,6 @@ protocol MessageDelegate: class {
 protocol MessageFeedViewModel: class {
     var messages: [Message?] { get }
     var users: [String?] { get }
-    var filterActive: Bool { get }
     var filterName: String? { get set }
     var delegate: MessageDelegate? { get set }
 
@@ -41,7 +40,6 @@ class MessageFeedViewModelImplementation: NSObject, MessageFeedViewModel {
 
     weak var delegate: MessageDelegate?
 
-    private(set) var filterActive: Bool = false
     private(set) var users: [String?] = []
     private(set) var messages: [Message?] = []
     private let service: MessageService
