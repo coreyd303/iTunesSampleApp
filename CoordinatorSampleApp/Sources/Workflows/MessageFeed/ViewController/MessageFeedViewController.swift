@@ -106,7 +106,7 @@ class MessageFeedViewController: UIViewController, MessageFeedPresentable, Alert
     /// update the navigationBar title
     /// - Parameter filterName: a name to use in the title
     private func setNavigationTitle(_ filterName: String?) {
-        self.title = filterName == nil ? "Lovevery Sample App" : "Viewing \(filterName?.capitalized ?? "User")'s Posts"
+        self.title = filterName == nil ? "Coordinator Sample App" : "Viewing \(filterName?.capitalized ?? "User")'s Posts"
     }
 
 }
