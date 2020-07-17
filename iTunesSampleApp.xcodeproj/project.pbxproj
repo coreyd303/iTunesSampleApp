@@ -1,0 +1,1435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E00D185B2496A489001EED5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00D185A2496A489001EED5D /* AppDelegate.swift */; };
+		E00D185D2496A489001EED5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00D185C2496A489001EED5D /* SceneDelegate.swift */; };
+		E00D18642496A48B001EED5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00D18632496A48B001EED5D /* Assets.xcassets */; };
+		E00D18672496A48B001EED5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00D18652496A48B001EED5D /* LaunchScreen.storyboard */; };
+		E00D18802496A658001EED5D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00D187F2496A658001EED5D /* Nimble.framework */; };
+		E00D18822496A65A001EED5D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00D18812496A65A001EED5D /* Quick.framework */; };
+		E00F8DAF2499893E00970FF3 /* StartupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F8DAE2499893E00970FF3 /* StartupCoordinator.swift */; };
+		E00F8DD4249A8E1600970FF3 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F8DD3249A8E1600970FF3 /* AppCoordinatorTests.swift */; };
+		E00F8DD7249A8E8300970FF3 /* MockWindowProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F8DD6249A8E8300970FF3 /* MockWindowProviding.swift */; };
+		E00F8DD9249A8EB900970FF3 /* MockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F8DD8249A8EB900970FF3 /* MockRouter.swift */; };
+		E00F8DDB249A8EE900970FF3 /* MockAppChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F8DDA249A8EE900970FF3 /* MockAppChildCoordinatorFactory.swift */; };
+		E00F8DDD249A908400970FF3 /* MockStartupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F8DDC249A908400970FF3 /* MockStartupCoordinator.swift */; };
+		E00F8DE0249A90B800970FF3 /* MockMusicFeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00F8DDF249A90B800970FF3 /* MockMusicFeedCoordinator.swift */; };
+		E00FD91D2497DEF00036B75D /* MusicFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FD91C2497DEF00036B75D /* MusicFeedCell.swift */; };
+		E00FD922249838AE0036B75D /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FD921249838AE0036B75D /* Collection+Extension.swift */; };
+		E0188A4224C2475800EEAF43 /* StubGetMusicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A4124C2475800EEAF43 /* StubGetMusicResponse.swift */; };
+		E0188A4424C2480400EEAF43 /* StubAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A4324C2480400EEAF43 /* StubAlbum.swift */; };
+		E0188A4624C248AF00EEAF43 /* StubGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A4524C248AF00EEAF43 /* StubGenre.swift */; };
+		E0188A4C24C24A5F00EEAF43 /* AlbumDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A4B24C24A5F00EEAF43 /* AlbumDetailsViewControllerTests.swift */; };
+		E0188A5024C24AFF00EEAF43 /* MockAlbumDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A4F24C24AFF00EEAF43 /* MockAlbumDetailsViewModel.swift */; };
+		E0188A5224C24DB800EEAF43 /* MockAlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A5124C24DB800EEAF43 /* MockAlbumDetailView.swift */; };
+		E0188A5424C2545800EEAF43 /* AlbumDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A5324C2545800EEAF43 /* AlbumDetailsViewModelTests.swift */; };
+		E0188A5624C2554400EEAF43 /* AlbumDetailsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A5524C2554300EEAF43 /* AlbumDetailsViewTests.swift */; };
+		E0188A5824C2579B00EEAF43 /* MockCachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A5724C2579B00EEAF43 /* MockCachedImageView.swift */; };
+		E0188A5A24C2596F00EEAF43 /* AlbumDetailsCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A5924C2596F00EEAF43 /* AlbumDetailsCoordinatorTests.swift */; };
+		E0188A5C24C259C100EEAF43 /* MockAlbumDetailsPresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A5B24C259C100EEAF43 /* MockAlbumDetailsPresentableFactory.swift */; };
+		E0188A5E24C259EE00EEAF43 /* MockAlbumDetailsChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A5D24C259EE00EEAF43 /* MockAlbumDetailsChildCoordinatorFactory.swift */; };
+		E0188A6024C25B9200EEAF43 /* MockAlbumDetailsPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A5F24C25B9200EEAF43 /* MockAlbumDetailsPresentable.swift */; };
+		E0188A6224C25BE500EEAF43 /* MockItunesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A6124C25BE500EEAF43 /* MockItunesCoordinator.swift */; };
+		E0188A6424C2600100EEAF43 /* ItunesAlbumCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A6324C2600000EEAF43 /* ItunesAlbumCoordinatorTests.swift */; };
+		E0188A6824C263A700EEAF43 /* AlbumDetailsPresentableFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A6724C263A700EEAF43 /* AlbumDetailsPresentableFactoryTests.swift */; };
+		E0188A6A24C2660A00EEAF43 /* AlbumDetailsChildCoordinatorFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0188A6924C2660A00EEAF43 /* AlbumDetailsChildCoordinatorFactoryTests.swift */; };
+		E021FB312496AE29006CA950 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB302496AE29006CA950 /* AppState.swift */; };
+		E021FB332496AE44006CA950 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB322496AE44006CA950 /* AppCoordinator.swift */; };
+		E021FB352496AE5B006CA950 /* AppChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB342496AE5B006CA950 /* AppChildCoordinatorFactory.swift */; };
+		E021FB3D2496AEBD006CA950 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB3C2496AEBD006CA950 /* Coordinator.swift */; };
+		E021FB3F2496AEDE006CA950 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB3E2496AEDE006CA950 /* BaseCoordinator.swift */; };
+		E021FB422496AF38006CA950 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB412496AF38006CA950 /* Presentable.swift */; };
+		E021FB442496AF41006CA950 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB432496AF41006CA950 /* Presenter.swift */; };
+		E021FB462496AF4B006CA950 /* WindowProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB452496AF4B006CA950 /* WindowProviding.swift */; };
+		E021FB482496AF98006CA950 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB472496AF98006CA950 /* Queue.swift */; };
+		E021FB4A2496AFBC006CA950 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB492496AFBC006CA950 /* Result.swift */; };
+		E021FB4C2496B039006CA950 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB4B2496B039006CA950 /* Router.swift */; };
+		E021FB4E2496B063006CA950 /* BasePresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB4D2496B063006CA950 /* BasePresentableFactory.swift */; };
+		E021FB522496B373006CA950 /* SAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB512496B373006CA950 /* SAError.swift */; };
+		E021FB552496B463006CA950 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB542496B463006CA950 /* NetworkTarget.swift */; };
+		E021FB572496B472006CA950 /* NetworkPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB562496B472006CA950 /* NetworkPath.swift */; };
+		E021FB592496B47A006CA950 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB582496B47A006CA950 /* HTTPMethod.swift */; };
+		E021FB5D2496B4A2006CA950 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB5C2496B4A2006CA950 /* Request.swift */; };
+		E021FB5F2496B4AC006CA950 /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB5E2496B4AC006CA950 /* RequestData.swift */; };
+		E021FB612496B4B6006CA950 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB602496B4B6006CA950 /* RequestType.swift */; };
+		E021FB632496B4C2006CA950 /* NetworkDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB622496B4C2006CA950 /* NetworkDispatch.swift */; };
+		E021FB6D2496BADF006CA950 /* MusicFeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB6C2496BADF006CA950 /* MusicFeedCoordinator.swift */; };
+		E021FB6F2496BB38006CA950 /* MusicFeedPresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB6E2496BB38006CA950 /* MusicFeedPresentableFactory.swift */; };
+		E021FB712496BB96006CA950 /* MusicFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB702496BB96006CA950 /* MusicFeedViewController.swift */; };
+		E021FB732496BC10006CA950 /* MusicFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB722496BC10006CA950 /* MusicFeedViewModel.swift */; };
+		E021FB752496BC63006CA950 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB742496BC63006CA950 /* MusicService.swift */; };
+		E021FB792496BD45006CA950 /* MusicServiceRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB782496BD45006CA950 /* MusicServiceRequestFactory.swift */; };
+		E021FB7D2496C3A4006CA950 /* GetMusicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021FB7C2496C3A4006CA950 /* GetMusicResponse.swift */; };
+		E0884C7E249A9A0C007B40F1 /* AppChildCoordinatorFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C7D249A9A0C007B40F1 /* AppChildCoordinatorFactoryTests.swift */; };
+		E0884C83249A9D30007B40F1 /* BaseCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C82249A9D30007B40F1 /* BaseCoordinatorTests.swift */; };
+		E0884C85249A9D69007B40F1 /* MockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C84249A9D69007B40F1 /* MockCoordinator.swift */; };
+		E0884C87249A9D9C007B40F1 /* MockBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C86249A9D9C007B40F1 /* MockBaseCoordinator.swift */; };
+		E0884C8D249A9E3C007B40F1 /* BasePresentableFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C8C249A9E3C007B40F1 /* BasePresentableFactoryTests.swift */; };
+		E0884C8F249A9E6B007B40F1 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C8E249A9E6B007B40F1 /* QueueTests.swift */; };
+		E0884C91249A9EF0007B40F1 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C90249A9EF0007B40F1 /* RouterTests.swift */; };
+		E0884C93249A9F1A007B40F1 /* MockPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C92249A9F1A007B40F1 /* MockPresentable.swift */; };
+		E0884C95249A9F42007B40F1 /* MockNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C94249A9F42007B40F1 /* MockNavigationController.swift */; };
+		E0884C97249A9FA8007B40F1 /* LSAErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C96249A9FA8007B40F1 /* LSAErrorTests.swift */; };
+		E0884C99249AA652007B40F1 /* CollectionExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C98249AA652007B40F1 /* CollectionExtensionTests.swift */; };
+		E0884C9E249AA768007B40F1 /* NetworkTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C9D249AA768007B40F1 /* NetworkTargetTests.swift */; };
+		E0884CA0249AA774007B40F1 /* NetworkPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884C9F249AA774007B40F1 /* NetworkPathTests.swift */; };
+		E0884CA2249AA780007B40F1 /* HTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CA1249AA780007B40F1 /* HTTPMethodTests.swift */; };
+		E0884CA4249AA9EC007B40F1 /* RequestDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CA3249AA9EC007B40F1 /* RequestDataTests.swift */; };
+		E0884CA6249AAA58007B40F1 /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CA5249AAA58007B40F1 /* RequestTests.swift */; };
+		E0884CA9249AAABF007B40F1 /* StubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CA8249AAABF007B40F1 /* StubRequest.swift */; };
+		E0884CAB249AAB0C007B40F1 /* MockQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CAA249AAB0C007B40F1 /* MockQueue.swift */; };
+		E0884CAD249AACCF007B40F1 /* MockNetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CAC249AACCF007B40F1 /* MockNetworkDispatcher.swift */; };
+		E0884CB5249AAEA3007B40F1 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CB4249AAEA3007B40F1 /* MockError.swift */; };
+		E0884CBC249AAFBB007B40F1 /* AlertablePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CBB249AAFBB007B40F1 /* AlertablePresenterTests.swift */; };
+		E0884CCC249AB7C5007B40F1 /* UITestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CCB249AB7C5007B40F1 /* UITestUtilities.swift */; };
+		E0884CDC249ABDBA007B40F1 /* MockAlbumDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CDB249ABDBA007B40F1 /* MockAlbumDetailsCoordinator.swift */; };
+		E0884CE0249AC588007B40F1 /* MockAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CDF249AC588007B40F1 /* MockAlertController.swift */; };
+		E0884CE2249ACC0A007B40F1 /* UIAlertController+TestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0884CE1249ACC0A007B40F1 /* UIAlertController+TestExtension.swift */; };
+		E09320B824BFB229008FA985 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09320B724BFB229008FA985 /* Album.swift */; };
+		E09320BA24BFB23A008FA985 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09320B924BFB23A008FA985 /* Genre.swift */; };
+		E09320C224BFBC20008FA985 /* AlbumDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09320C124BFBC20008FA985 /* AlbumDetailsCoordinator.swift */; };
+		E09320C424BFBCB0008FA985 /* AlbumDetailsPresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09320C324BFBCB0008FA985 /* AlbumDetailsPresentableFactory.swift */; };
+		E09320C624BFBD17008FA985 /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09320C524BFBD17008FA985 /* AlbumDetailsViewController.swift */; };
+		E09320C824BFBD5D008FA985 /* AlbumDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09320C724BFBD5D008FA985 /* AlbumDetailsViewModel.swift */; };
+		E09320CA24BFBD91008FA985 /* AlbumDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09320C924BFBD91008FA985 /* AlbumDetailsView.swift */; };
+		E09AA14D249BD4B700B0ED9A /* MockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09AA14C249BD4B700B0ED9A /* MockTableView.swift */; };
+		E0D2F0DF249913B700B5B067 /* AlertablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2F0DE249913B700B5B067 /* AlertablePresenter.swift */; };
+		E0D2F0E924997C9200B5B067 /* MusicFeedChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2F0E824997C9200B5B067 /* MusicFeedChildCoordinatorFactory.swift */; };
+		E0F60E6224C1111A000BB157 /* ItunesAlbumCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F60E6124C1111A000BB157 /* ItunesAlbumCoordinator.swift */; };
+		E0F60E6424C11318000BB157 /* AlbumDetailsChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F60E6324C11318000BB157 /* AlbumDetailsChildCoordinatorFactory.swift */; };
+		E0F60E6824C21C45000BB157 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F60E6524C2196D000BB157 /* CachedImageView.swift */; };
+		E0F60E6A24C21CF2000BB157 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F60E6924C21CF2000BB157 /* ImageCache.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E00D186E2496A48B001EED5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E00D184F2496A488001EED5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00D18562496A488001EED5D;
+			remoteInfo = LoveverySampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E00D18572496A489001EED5D /* iTunesSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00D185A2496A489001EED5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E00D185C2496A489001EED5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E00D18632496A48B001EED5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E00D18662496A48B001EED5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E00D18682496A48B001EED5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00D186D2496A48B001EED5D /* iTunesSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00D18732496A48B001EED5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00D187F2496A658001EED5D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		E00D18812496A65A001EED5D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		E00F8DAE2499893E00970FF3 /* StartupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupCoordinator.swift; sourceTree = "<group>"; };
+		E00F8DB324998C7F00970FF3 /* Fakery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fakery.framework; path = Carthage/Build/iOS/Fakery.framework; sourceTree = "<group>"; };
+		E00F8DD3249A8E1600970FF3 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		E00F8DD6249A8E8300970FF3 /* MockWindowProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWindowProviding.swift; sourceTree = "<group>"; };
+		E00F8DD8249A8EB900970FF3 /* MockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRouter.swift; sourceTree = "<group>"; };
+		E00F8DDA249A8EE900970FF3 /* MockAppChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppChildCoordinatorFactory.swift; sourceTree = "<group>"; };
+		E00F8DDC249A908400970FF3 /* MockStartupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStartupCoordinator.swift; sourceTree = "<group>"; };
+		E00F8DDF249A90B800970FF3 /* MockMusicFeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMusicFeedCoordinator.swift; sourceTree = "<group>"; };
+		E00FD91C2497DEF00036B75D /* MusicFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFeedCell.swift; sourceTree = "<group>"; };
+		E00FD921249838AE0036B75D /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		E0188A4124C2475800EEAF43 /* StubGetMusicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubGetMusicResponse.swift; sourceTree = "<group>"; };
+		E0188A4324C2480400EEAF43 /* StubAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubAlbum.swift; sourceTree = "<group>"; };
+		E0188A4524C248AF00EEAF43 /* StubGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubGenre.swift; sourceTree = "<group>"; };
+		E0188A4B24C24A5F00EEAF43 /* AlbumDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		E0188A4F24C24AFF00EEAF43 /* MockAlbumDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlbumDetailsViewModel.swift; sourceTree = "<group>"; };
+		E0188A5124C24DB800EEAF43 /* MockAlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlbumDetailView.swift; sourceTree = "<group>"; };
+		E0188A5324C2545800EEAF43 /* AlbumDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		E0188A5524C2554300EEAF43 /* AlbumDetailsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewTests.swift; sourceTree = "<group>"; };
+		E0188A5724C2579B00EEAF43 /* MockCachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCachedImageView.swift; sourceTree = "<group>"; };
+		E0188A5924C2596F00EEAF43 /* AlbumDetailsCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsCoordinatorTests.swift; sourceTree = "<group>"; };
+		E0188A5B24C259C100EEAF43 /* MockAlbumDetailsPresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlbumDetailsPresentableFactory.swift; sourceTree = "<group>"; };
+		E0188A5D24C259EE00EEAF43 /* MockAlbumDetailsChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlbumDetailsChildCoordinatorFactory.swift; sourceTree = "<group>"; };
+		E0188A5F24C25B9200EEAF43 /* MockAlbumDetailsPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlbumDetailsPresentable.swift; sourceTree = "<group>"; };
+		E0188A6124C25BE500EEAF43 /* MockItunesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockItunesCoordinator.swift; sourceTree = "<group>"; };
+		E0188A6324C2600000EEAF43 /* ItunesAlbumCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAlbumCoordinatorTests.swift; sourceTree = "<group>"; };
+		E0188A6724C263A700EEAF43 /* AlbumDetailsPresentableFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsPresentableFactoryTests.swift; sourceTree = "<group>"; };
+		E0188A6924C2660A00EEAF43 /* AlbumDetailsChildCoordinatorFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsChildCoordinatorFactoryTests.swift; sourceTree = "<group>"; };
+		E021FB302496AE29006CA950 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E021FB322496AE44006CA950 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E021FB342496AE5B006CA950 /* AppChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChildCoordinatorFactory.swift; sourceTree = "<group>"; };
+		E021FB3C2496AEBD006CA950 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E021FB3E2496AEDE006CA950 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		E021FB412496AF38006CA950 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		E021FB432496AF41006CA950 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		E021FB452496AF4B006CA950 /* WindowProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowProviding.swift; sourceTree = "<group>"; };
+		E021FB472496AF98006CA950 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		E021FB492496AFBC006CA950 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E021FB4B2496B039006CA950 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E021FB4D2496B063006CA950 /* BasePresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentableFactory.swift; sourceTree = "<group>"; };
+		E021FB512496B373006CA950 /* SAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAError.swift; sourceTree = "<group>"; };
+		E021FB542496B463006CA950 /* NetworkTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTarget.swift; sourceTree = "<group>"; };
+		E021FB562496B472006CA950 /* NetworkPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPath.swift; sourceTree = "<group>"; };
+		E021FB582496B47A006CA950 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		E021FB5C2496B4A2006CA950 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E021FB5E2496B4AC006CA950 /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
+		E021FB602496B4B6006CA950 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		E021FB622496B4C2006CA950 /* NetworkDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatch.swift; sourceTree = "<group>"; };
+		E021FB6C2496BADF006CA950 /* MusicFeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFeedCoordinator.swift; sourceTree = "<group>"; };
+		E021FB6E2496BB38006CA950 /* MusicFeedPresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFeedPresentableFactory.swift; sourceTree = "<group>"; };
+		E021FB702496BB96006CA950 /* MusicFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFeedViewController.swift; sourceTree = "<group>"; };
+		E021FB722496BC10006CA950 /* MusicFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFeedViewModel.swift; sourceTree = "<group>"; };
+		E021FB742496BC63006CA950 /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		E021FB782496BD45006CA950 /* MusicServiceRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceRequestFactory.swift; sourceTree = "<group>"; };
+		E021FB7C2496C3A4006CA950 /* GetMusicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMusicResponse.swift; sourceTree = "<group>"; };
+		E0884C7D249A9A0C007B40F1 /* AppChildCoordinatorFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChildCoordinatorFactoryTests.swift; sourceTree = "<group>"; };
+		E0884C82249A9D30007B40F1 /* BaseCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorTests.swift; sourceTree = "<group>"; };
+		E0884C84249A9D69007B40F1 /* MockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoordinator.swift; sourceTree = "<group>"; };
+		E0884C86249A9D9C007B40F1 /* MockBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBaseCoordinator.swift; sourceTree = "<group>"; };
+		E0884C8C249A9E3C007B40F1 /* BasePresentableFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentableFactoryTests.swift; sourceTree = "<group>"; };
+		E0884C8E249A9E6B007B40F1 /* QueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
+		E0884C90249A9EF0007B40F1 /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		E0884C92249A9F1A007B40F1 /* MockPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPresentable.swift; sourceTree = "<group>"; };
+		E0884C94249A9F42007B40F1 /* MockNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNavigationController.swift; sourceTree = "<group>"; };
+		E0884C96249A9FA8007B40F1 /* LSAErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAErrorTests.swift; sourceTree = "<group>"; };
+		E0884C98249AA652007B40F1 /* CollectionExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensionTests.swift; sourceTree = "<group>"; };
+		E0884C9D249AA768007B40F1 /* NetworkTargetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTargetTests.swift; sourceTree = "<group>"; };
+		E0884C9F249AA774007B40F1 /* NetworkPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPathTests.swift; sourceTree = "<group>"; };
+		E0884CA1249AA780007B40F1 /* HTTPMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodTests.swift; sourceTree = "<group>"; };
+		E0884CA3249AA9EC007B40F1 /* RequestDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDataTests.swift; sourceTree = "<group>"; };
+		E0884CA5249AAA58007B40F1 /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
+		E0884CA8249AAABF007B40F1 /* StubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubRequest.swift; sourceTree = "<group>"; };
+		E0884CAA249AAB0C007B40F1 /* MockQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQueue.swift; sourceTree = "<group>"; };
+		E0884CAC249AACCF007B40F1 /* MockNetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkDispatcher.swift; sourceTree = "<group>"; };
+		E0884CB4249AAEA3007B40F1 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		E0884CBB249AAFBB007B40F1 /* AlertablePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertablePresenterTests.swift; sourceTree = "<group>"; };
+		E0884CCB249AB7C5007B40F1 /* UITestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestUtilities.swift; sourceTree = "<group>"; };
+		E0884CDB249ABDBA007B40F1 /* MockAlbumDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlbumDetailsCoordinator.swift; sourceTree = "<group>"; };
+		E0884CDF249AC588007B40F1 /* MockAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlertController.swift; sourceTree = "<group>"; };
+		E0884CE1249ACC0A007B40F1 /* UIAlertController+TestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+TestExtension.swift"; sourceTree = "<group>"; };
+		E09320B724BFB229008FA985 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		E09320B924BFB23A008FA985 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		E09320C124BFBC20008FA985 /* AlbumDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsCoordinator.swift; sourceTree = "<group>"; };
+		E09320C324BFBCB0008FA985 /* AlbumDetailsPresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsPresentableFactory.swift; sourceTree = "<group>"; };
+		E09320C524BFBD17008FA985 /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
+		E09320C724BFBD5D008FA985 /* AlbumDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewModel.swift; sourceTree = "<group>"; };
+		E09320C924BFBD91008FA985 /* AlbumDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsView.swift; sourceTree = "<group>"; };
+		E09AA14C249BD4B700B0ED9A /* MockTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTableView.swift; sourceTree = "<group>"; };
+		E0D2F0DE249913B700B5B067 /* AlertablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertablePresenter.swift; sourceTree = "<group>"; };
+		E0D2F0E824997C9200B5B067 /* MusicFeedChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFeedChildCoordinatorFactory.swift; sourceTree = "<group>"; };
+		E0F60E6124C1111A000BB157 /* ItunesAlbumCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAlbumCoordinator.swift; sourceTree = "<group>"; };
+		E0F60E6324C11318000BB157 /* AlbumDetailsChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsChildCoordinatorFactory.swift; sourceTree = "<group>"; };
+		E0F60E6524C2196D000BB157 /* CachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
+		E0F60E6924C21CF2000BB157 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E00D18542496A488001EED5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00D186A2496A48B001EED5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00D18802496A658001EED5D /* Nimble.framework in Frameworks */,
+				E00D18822496A65A001EED5D /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E00D184E2496A488001EED5D = {
+			isa = PBXGroup;
+			children = (
+				E00D18592496A489001EED5D /* iTunesSampleApp */,
+				E00D18702496A48B001EED5D /* iTunesSampleAppTests */,
+				E00D18582496A489001EED5D /* Products */,
+				E00D187E2496A658001EED5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E00D18582496A489001EED5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E00D18572496A489001EED5D /* iTunesSampleApp.app */,
+				E00D186D2496A48B001EED5D /* iTunesSampleAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E00D18592496A489001EED5D /* iTunesSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				E00D18652496A48B001EED5D /* LaunchScreen.storyboard */,
+				E00D18842496A733001EED5D /* AppDelegates */,
+				E00D18852496A74D001EED5D /* Assets */,
+				E00D18862496A756001EED5D /* Properties */,
+				E00D18872496A75F001EED5D /* Sources */,
+			);
+			path = iTunesSampleApp;
+			sourceTree = "<group>";
+		};
+		E00D18702496A48B001EED5D /* iTunesSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E00F8DD5249A8E7500970FF3 /* Mocks */,
+				E00D18882496A808001EED5D /* Properties */,
+				E0884CA7249AAA90007B40F1 /* Stubs */,
+				E00D18892496A80F001EED5D /* TestSources */,
+				E0884CCA249AB7A6007B40F1 /* TestUtilities */,
+			);
+			path = iTunesSampleAppTests;
+			sourceTree = "<group>";
+		};
+		E00D187E2496A658001EED5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E00F8DB324998C7F00970FF3 /* Fakery.framework */,
+				E00D18812496A65A001EED5D /* Quick.framework */,
+				E00D187F2496A658001EED5D /* Nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E00D18842496A733001EED5D /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				E00D185A2496A489001EED5D /* AppDelegate.swift */,
+				E00D185C2496A489001EED5D /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		E00D18852496A74D001EED5D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E00D18632496A48B001EED5D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E00D18862496A756001EED5D /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				E00D18682496A48B001EED5D /* Info.plist */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		E00D18872496A75F001EED5D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB2C2496ADE2006CA950 /* AppRoot */,
+				E021FB2D2496ADF0006CA950 /* AppState */,
+				E021FB362496AE6A006CA950 /* Base */,
+				E021FB502496B35F006CA950 /* Errors */,
+				E00FD9202498389F0036B75D /* Extensions */,
+				E021FB4F2496B34D006CA950 /* Networking */,
+				E0F60E6724C21BF3000BB157 /* Support */,
+				E021FB642496BA35006CA950 /* Workflows */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E00D18882496A808001EED5D /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				E00D18732496A48B001EED5D /* Info.plist */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		E00D18892496A80F001EED5D /* TestSources */ = {
+			isa = PBXGroup;
+			children = (
+				E00F8DC6249A8C9C00970FF3 /* AppRoot */,
+				E00F8DC8249A8CB300970FF3 /* Base */,
+				E00F8DC9249A8CC600970FF3 /* Errors */,
+				E00F8DCE249A8DBD00970FF3 /* Extentions */,
+				E00F8DCF249A8DCB00970FF3 /* Networking */,
+				E00F8DD0249A8DD300970FF3 /* Workflows */,
+			);
+			path = TestSources;
+			sourceTree = "<group>";
+		};
+		E00F8DAB249988DE00970FF3 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				E00F8DAC2499892400970FF3 /* Coordinator */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		E00F8DAC2499892400970FF3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E00F8DAE2499893E00970FF3 /* StartupCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E00F8DC6249A8C9C00970FF3 /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				E00F8DD2249A8DEE00970FF3 /* Coordinators */,
+				E00F8DD1249A8DE800970FF3 /* Factories */,
+			);
+			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		E00F8DC8249A8CB300970FF3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C81249A9D02007B40F1 /* Coordintators */,
+				E0884C8A249A9DFC007B40F1 /* Presentable */,
+				E0884C89249A9DD7007B40F1 /* Queue */,
+				E0884C88249A9DCF007B40F1 /* Router */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E00F8DC9249A8CC600970FF3 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C96249A9FA8007B40F1 /* LSAErrorTests.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		E00F8DCD249A8D8F00970FF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E09320B724BFB229008FA985 /* Album.swift */,
+				E09320B924BFB23A008FA985 /* Genre.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E00F8DCE249A8DBD00970FF3 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C98249AA652007B40F1 /* CollectionExtensionTests.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		E00F8DCF249A8DCB00970FF3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C9C249AA747007B40F1 /* Resources */,
+				E0884C9B249AA73F007B40F1 /* Request */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E00F8DD0249A8DD300970FF3 /* Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				E0188A4724C24A3100EEAF43 /* AlbumDetails */,
+				E0884CB8249AAF65007B40F1 /* Alerts */,
+			);
+			path = Workflows;
+			sourceTree = "<group>";
+		};
+		E00F8DD1249A8DE800970FF3 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C7D249A9A0C007B40F1 /* AppChildCoordinatorFactoryTests.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E00F8DD2249A8DEE00970FF3 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E00F8DD3249A8E1600970FF3 /* AppCoordinatorTests.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E00F8DD5249A8E7500970FF3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E0188A5D24C259EE00EEAF43 /* MockAlbumDetailsChildCoordinatorFactory.swift */,
+				E0884CDB249ABDBA007B40F1 /* MockAlbumDetailsCoordinator.swift */,
+				E0188A5F24C25B9200EEAF43 /* MockAlbumDetailsPresentable.swift */,
+				E0188A5B24C259C100EEAF43 /* MockAlbumDetailsPresentableFactory.swift */,
+				E0188A4F24C24AFF00EEAF43 /* MockAlbumDetailsViewModel.swift */,
+				E0188A5124C24DB800EEAF43 /* MockAlbumDetailView.swift */,
+				E0884CDF249AC588007B40F1 /* MockAlertController.swift */,
+				E00F8DDA249A8EE900970FF3 /* MockAppChildCoordinatorFactory.swift */,
+				E0884C86249A9D9C007B40F1 /* MockBaseCoordinator.swift */,
+				E0188A5724C2579B00EEAF43 /* MockCachedImageView.swift */,
+				E0884C84249A9D69007B40F1 /* MockCoordinator.swift */,
+				E0884CB4249AAEA3007B40F1 /* MockError.swift */,
+				E0188A6124C25BE500EEAF43 /* MockItunesCoordinator.swift */,
+				E00F8DDF249A90B800970FF3 /* MockMusicFeedCoordinator.swift */,
+				E0884C94249A9F42007B40F1 /* MockNavigationController.swift */,
+				E0884CAC249AACCF007B40F1 /* MockNetworkDispatcher.swift */,
+				E0884C92249A9F1A007B40F1 /* MockPresentable.swift */,
+				E0884CAA249AAB0C007B40F1 /* MockQueue.swift */,
+				E00F8DD8249A8EB900970FF3 /* MockRouter.swift */,
+				E00F8DDC249A908400970FF3 /* MockStartupCoordinator.swift */,
+				E09AA14C249BD4B700B0ED9A /* MockTableView.swift */,
+				E00F8DD6249A8E8300970FF3 /* MockWindowProviding.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E00FD9202498389F0036B75D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E00FD921249838AE0036B75D /* Collection+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E0188A4724C24A3100EEAF43 /* AlbumDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E0188A4824C24A3E00EEAF43 /* Coordinator */,
+				E0188A4924C24A4500EEAF43 /* Factories */,
+				E0188A4A24C24A4B00EEAF43 /* ViewController */,
+			);
+			path = AlbumDetails;
+			sourceTree = "<group>";
+		};
+		E0188A4824C24A3E00EEAF43 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E0188A5924C2596F00EEAF43 /* AlbumDetailsCoordinatorTests.swift */,
+				E0188A6324C2600000EEAF43 /* ItunesAlbumCoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E0188A4924C24A4500EEAF43 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E0188A6724C263A700EEAF43 /* AlbumDetailsPresentableFactoryTests.swift */,
+				E0188A6924C2660A00EEAF43 /* AlbumDetailsChildCoordinatorFactoryTests.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E0188A4A24C24A4B00EEAF43 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E0188A4B24C24A5F00EEAF43 /* AlbumDetailsViewControllerTests.swift */,
+				E0188A4D24C24A6300EEAF43 /* ViewModel */,
+				E0188A4E24C24A6A00EEAF43 /* Views */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E0188A4D24C24A6300EEAF43 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E0188A5324C2545800EEAF43 /* AlbumDetailsViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E0188A4E24C24A6A00EEAF43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0188A5524C2554300EEAF43 /* AlbumDetailsViewTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E021FB2C2496ADE2006CA950 /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB2E2496ADFC006CA950 /* Coordinators */,
+				E021FB2F2496AE0D006CA950 /* Factories */,
+			);
+			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		E021FB2D2496ADF0006CA950 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB302496AE29006CA950 /* AppState.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		E021FB2E2496ADFC006CA950 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB322496AE44006CA950 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E021FB2F2496AE0D006CA950 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB342496AE5B006CA950 /* AppChildCoordinatorFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E021FB362496AE6A006CA950 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB3B2496AE9C006CA950 /* Coordinators */,
+				E021FB3A2496AE92006CA950 /* Presentable */,
+				E021FB372496AE7B006CA950 /* Queue */,
+				E021FB382496AE81006CA950 /* Result */,
+				E021FB392496AE8A006CA950 /* Router */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E021FB372496AE7B006CA950 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB472496AF98006CA950 /* Queue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		E021FB382496AE81006CA950 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB492496AFBC006CA950 /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		E021FB392496AE8A006CA950 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB4B2496B039006CA950 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E021FB3A2496AE92006CA950 /* Presentable */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB402496AF2A006CA950 /* Factories */,
+				E021FB412496AF38006CA950 /* Presentable.swift */,
+				E021FB432496AF41006CA950 /* Presenter.swift */,
+				E021FB452496AF4B006CA950 /* WindowProviding.swift */,
+			);
+			path = Presentable;
+			sourceTree = "<group>";
+		};
+		E021FB3B2496AE9C006CA950 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB3C2496AEBD006CA950 /* Coordinator.swift */,
+				E021FB3E2496AEDE006CA950 /* BaseCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E021FB402496AF2A006CA950 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB4D2496B063006CA950 /* BasePresentableFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E021FB4F2496B34D006CA950 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB5B2496B48D006CA950 /* Dispatch */,
+				E021FB5A2496B486006CA950 /* Request */,
+				E021FB532496B454006CA950 /* Resources */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E021FB502496B35F006CA950 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB512496B373006CA950 /* SAError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		E021FB532496B454006CA950 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB582496B47A006CA950 /* HTTPMethod.swift */,
+				E021FB562496B472006CA950 /* NetworkPath.swift */,
+				E021FB542496B463006CA950 /* NetworkTarget.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E021FB5A2496B486006CA950 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB5C2496B4A2006CA950 /* Request.swift */,
+				E021FB5E2496B4AC006CA950 /* RequestData.swift */,
+				E021FB602496B4B6006CA950 /* RequestType.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E021FB5B2496B48D006CA950 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB622496B4C2006CA950 /* NetworkDispatch.swift */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		E021FB642496BA35006CA950 /* Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				E0D2F0DD249913A600B5B067 /* Alerts */,
+				E09320BB24BFBBCB008FA985 /* AlbumDetails */,
+				E021FB652496BA55006CA950 /* MusicFeed */,
+				E00F8DAB249988DE00970FF3 /* Startup */,
+			);
+			path = Workflows;
+			sourceTree = "<group>";
+		};
+		E021FB652496BA55006CA950 /* MusicFeed */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB672496BA78006CA950 /* Coordinator */,
+				E021FB682496BA89006CA950 /* Factories */,
+				E021FB662496BA64006CA950 /* Services */,
+				E021FB692496BA91006CA950 /* ViewController */,
+			);
+			path = MusicFeed;
+			sourceTree = "<group>";
+		};
+		E021FB662496BA64006CA950 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB742496BC63006CA950 /* MusicService.swift */,
+				E021FB762496BD22006CA950 /* Factories */,
+				E021FB772496BD2C006CA950 /* Response */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E021FB672496BA78006CA950 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB6C2496BADF006CA950 /* MusicFeedCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E021FB682496BA89006CA950 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB6E2496BB38006CA950 /* MusicFeedPresentableFactory.swift */,
+				E0D2F0E824997C9200B5B067 /* MusicFeedChildCoordinatorFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E021FB692496BA91006CA950 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB702496BB96006CA950 /* MusicFeedViewController.swift */,
+				E00F8DCD249A8D8F00970FF3 /* Models */,
+				E021FB6A2496BAAD006CA950 /* ViewModel */,
+				E021FB6B2496BAB4006CA950 /* Views */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E021FB6A2496BAAD006CA950 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB722496BC10006CA950 /* MusicFeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E021FB6B2496BAB4006CA950 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E00FD91C2497DEF00036B75D /* MusicFeedCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E021FB762496BD22006CA950 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB782496BD45006CA950 /* MusicServiceRequestFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E021FB772496BD2C006CA950 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E021FB7C2496C3A4006CA950 /* GetMusicResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E0884C81249A9D02007B40F1 /* Coordintators */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C82249A9D30007B40F1 /* BaseCoordinatorTests.swift */,
+			);
+			path = Coordintators;
+			sourceTree = "<group>";
+		};
+		E0884C88249A9DCF007B40F1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C90249A9EF0007B40F1 /* RouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E0884C89249A9DD7007B40F1 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C8E249A9E6B007B40F1 /* QueueTests.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		E0884C8A249A9DFC007B40F1 /* Presentable */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C8B249A9E07007B40F1 /* Factories */,
+			);
+			path = Presentable;
+			sourceTree = "<group>";
+		};
+		E0884C8B249A9E07007B40F1 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C8C249A9E3C007B40F1 /* BasePresentableFactoryTests.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E0884C9B249AA73F007B40F1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E0884CA3249AA9EC007B40F1 /* RequestDataTests.swift */,
+				E0884CA5249AAA58007B40F1 /* RequestTests.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E0884C9C249AA747007B40F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0884C9D249AA768007B40F1 /* NetworkTargetTests.swift */,
+				E0884C9F249AA774007B40F1 /* NetworkPathTests.swift */,
+				E0884CA1249AA780007B40F1 /* HTTPMethodTests.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E0884CA7249AAA90007B40F1 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				E0188A4324C2480400EEAF43 /* StubAlbum.swift */,
+				E0188A4524C248AF00EEAF43 /* StubGenre.swift */,
+				E0188A4124C2475800EEAF43 /* StubGetMusicResponse.swift */,
+				E0884CA8249AAABF007B40F1 /* StubRequest.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		E0884CB8249AAF65007B40F1 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				E0884CBB249AAFBB007B40F1 /* AlertablePresenterTests.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		E0884CCA249AB7A6007B40F1 /* TestUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				E0884CCB249AB7C5007B40F1 /* UITestUtilities.swift */,
+				E0884CE1249ACC0A007B40F1 /* UIAlertController+TestExtension.swift */,
+			);
+			path = TestUtilities;
+			sourceTree = "<group>";
+		};
+		E09320BB24BFBBCB008FA985 /* AlbumDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E09320BC24BFBBD6008FA985 /* Coordinator */,
+				E09320BD24BFBBDD008FA985 /* Factories */,
+				E09320BE24BFBBEA008FA985 /* ViewController */,
+			);
+			path = AlbumDetails;
+			sourceTree = "<group>";
+		};
+		E09320BC24BFBBD6008FA985 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E09320C124BFBC20008FA985 /* AlbumDetailsCoordinator.swift */,
+				E0F60E6124C1111A000BB157 /* ItunesAlbumCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E09320BD24BFBBDD008FA985 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E09320C324BFBCB0008FA985 /* AlbumDetailsPresentableFactory.swift */,
+				E0F60E6324C11318000BB157 /* AlbumDetailsChildCoordinatorFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E09320BE24BFBBEA008FA985 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E09320C524BFBD17008FA985 /* AlbumDetailsViewController.swift */,
+				E09320BF24BFBBF9008FA985 /* ViewModel */,
+				E09320C024BFBC00008FA985 /* Views */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E09320BF24BFBBF9008FA985 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E09320C724BFBD5D008FA985 /* AlbumDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E09320C024BFBC00008FA985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E09320C924BFBD91008FA985 /* AlbumDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0D2F0DD249913A600B5B067 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				E0D2F0DE249913B700B5B067 /* AlertablePresenter.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		E0F60E6724C21BF3000BB157 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E0F60E6524C2196D000BB157 /* CachedImageView.swift */,
+				E0F60E6924C21CF2000BB157 /* ImageCache.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E00D18562496A488001EED5D /* iTunesSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00D18762496A48B001EED5D /* Build configuration list for PBXNativeTarget "iTunesSampleApp" */;
+			buildPhases = (
+				E00D18532496A488001EED5D /* Sources */,
+				E00D18542496A488001EED5D /* Frameworks */,
+				E00D18552496A488001EED5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTunesSampleApp;
+			productName = LoveverySampleApp;
+			productReference = E00D18572496A489001EED5D /* iTunesSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E00D186C2496A48B001EED5D /* iTunesSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00D18792496A48B001EED5D /* Build configuration list for PBXNativeTarget "iTunesSampleAppTests" */;
+			buildPhases = (
+				E00D18692496A48B001EED5D /* Sources */,
+				E00D186A2496A48B001EED5D /* Frameworks */,
+				E00D186B2496A48B001EED5D /* Resources */,
+				E00D18832496A6B3001EED5D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E00D186F2496A48B001EED5D /* PBXTargetDependency */,
+			);
+			name = iTunesSampleAppTests;
+			productName = LoveverySampleAppTests;
+			productReference = E00D186D2496A48B001EED5D /* iTunesSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E00D184F2496A488001EED5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Corey Davis";
+				TargetAttributes = {
+					E00D18562496A488001EED5D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E00D186C2496A48B001EED5D = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+						TestTargetID = E00D18562496A488001EED5D;
+					};
+				};
+			};
+			buildConfigurationList = E00D18522496A488001EED5D /* Build configuration list for PBXProject "iTunesSampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E00D184E2496A488001EED5D;
+			productRefGroup = E00D18582496A489001EED5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E00D18562496A488001EED5D /* iTunesSampleApp */,
+				E00D186C2496A48B001EED5D /* iTunesSampleAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E00D18552496A488001EED5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00D18672496A48B001EED5D /* LaunchScreen.storyboard in Resources */,
+				E00D18642496A48B001EED5D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00D186B2496A48B001EED5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E00D18832496A6B3001EED5D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E00D18532496A488001EED5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F60E6824C21C45000BB157 /* CachedImageView.swift in Sources */,
+				E021FB442496AF41006CA950 /* Presenter.swift in Sources */,
+				E021FB332496AE44006CA950 /* AppCoordinator.swift in Sources */,
+				E021FB612496B4B6006CA950 /* RequestType.swift in Sources */,
+				E021FB422496AF38006CA950 /* Presentable.swift in Sources */,
+				E021FB482496AF98006CA950 /* Queue.swift in Sources */,
+				E021FB352496AE5B006CA950 /* AppChildCoordinatorFactory.swift in Sources */,
+				E021FB572496B472006CA950 /* NetworkPath.swift in Sources */,
+				E021FB522496B373006CA950 /* SAError.swift in Sources */,
+				E021FB462496AF4B006CA950 /* WindowProviding.swift in Sources */,
+				E00FD922249838AE0036B75D /* Collection+Extension.swift in Sources */,
+				E00F8DAF2499893E00970FF3 /* StartupCoordinator.swift in Sources */,
+				E0F60E6224C1111A000BB157 /* ItunesAlbumCoordinator.swift in Sources */,
+				E09320B824BFB229008FA985 /* Album.swift in Sources */,
+				E09320CA24BFBD91008FA985 /* AlbumDetailsView.swift in Sources */,
+				E021FB7D2496C3A4006CA950 /* GetMusicResponse.swift in Sources */,
+				E0F60E6A24C21CF2000BB157 /* ImageCache.swift in Sources */,
+				E021FB4A2496AFBC006CA950 /* Result.swift in Sources */,
+				E021FB632496B4C2006CA950 /* NetworkDispatch.swift in Sources */,
+				E021FB3D2496AEBD006CA950 /* Coordinator.swift in Sources */,
+				E00FD91D2497DEF00036B75D /* MusicFeedCell.swift in Sources */,
+				E021FB312496AE29006CA950 /* AppState.swift in Sources */,
+				E0F60E6424C11318000BB157 /* AlbumDetailsChildCoordinatorFactory.swift in Sources */,
+				E09320C824BFBD5D008FA985 /* AlbumDetailsViewModel.swift in Sources */,
+				E021FB6D2496BADF006CA950 /* MusicFeedCoordinator.swift in Sources */,
+				E0D2F0E924997C9200B5B067 /* MusicFeedChildCoordinatorFactory.swift in Sources */,
+				E09320BA24BFB23A008FA985 /* Genre.swift in Sources */,
+				E021FB5F2496B4AC006CA950 /* RequestData.swift in Sources */,
+				E021FB3F2496AEDE006CA950 /* BaseCoordinator.swift in Sources */,
+				E021FB5D2496B4A2006CA950 /* Request.swift in Sources */,
+				E021FB712496BB96006CA950 /* MusicFeedViewController.swift in Sources */,
+				E00D185B2496A489001EED5D /* AppDelegate.swift in Sources */,
+				E021FB4E2496B063006CA950 /* BasePresentableFactory.swift in Sources */,
+				E021FB792496BD45006CA950 /* MusicServiceRequestFactory.swift in Sources */,
+				E021FB592496B47A006CA950 /* HTTPMethod.swift in Sources */,
+				E021FB752496BC63006CA950 /* MusicService.swift in Sources */,
+				E09320C224BFBC20008FA985 /* AlbumDetailsCoordinator.swift in Sources */,
+				E021FB6F2496BB38006CA950 /* MusicFeedPresentableFactory.swift in Sources */,
+				E021FB732496BC10006CA950 /* MusicFeedViewModel.swift in Sources */,
+				E09320C624BFBD17008FA985 /* AlbumDetailsViewController.swift in Sources */,
+				E0D2F0DF249913B700B5B067 /* AlertablePresenter.swift in Sources */,
+				E09320C424BFBCB0008FA985 /* AlbumDetailsPresentableFactory.swift in Sources */,
+				E00D185D2496A489001EED5D /* SceneDelegate.swift in Sources */,
+				E021FB4C2496B039006CA950 /* Router.swift in Sources */,
+				E021FB552496B463006CA950 /* NetworkTarget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00D18692496A48B001EED5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0188A5C24C259C100EEAF43 /* MockAlbumDetailsPresentableFactory.swift in Sources */,
+				E0188A6A24C2660A00EEAF43 /* AlbumDetailsChildCoordinatorFactoryTests.swift in Sources */,
+				E0188A5424C2545800EEAF43 /* AlbumDetailsViewModelTests.swift in Sources */,
+				E0884CA9249AAABF007B40F1 /* StubRequest.swift in Sources */,
+				E00F8DE0249A90B800970FF3 /* MockMusicFeedCoordinator.swift in Sources */,
+				E0188A5024C24AFF00EEAF43 /* MockAlbumDetailsViewModel.swift in Sources */,
+				E0188A5224C24DB800EEAF43 /* MockAlbumDetailView.swift in Sources */,
+				E0188A4624C248AF00EEAF43 /* StubGenre.swift in Sources */,
+				E00F8DD9249A8EB900970FF3 /* MockRouter.swift in Sources */,
+				E0884C9E249AA768007B40F1 /* NetworkTargetTests.swift in Sources */,
+				E00F8DD7249A8E8300970FF3 /* MockWindowProviding.swift in Sources */,
+				E0884C85249A9D69007B40F1 /* MockCoordinator.swift in Sources */,
+				E0188A6824C263A700EEAF43 /* AlbumDetailsPresentableFactoryTests.swift in Sources */,
+				E0884CDC249ABDBA007B40F1 /* MockAlbumDetailsCoordinator.swift in Sources */,
+				E00F8DDB249A8EE900970FF3 /* MockAppChildCoordinatorFactory.swift in Sources */,
+				E0884CAD249AACCF007B40F1 /* MockNetworkDispatcher.swift in Sources */,
+				E0188A4424C2480400EEAF43 /* StubAlbum.swift in Sources */,
+				E0884CAB249AAB0C007B40F1 /* MockQueue.swift in Sources */,
+				E0884C8F249A9E6B007B40F1 /* QueueTests.swift in Sources */,
+				E0188A4C24C24A5F00EEAF43 /* AlbumDetailsViewControllerTests.swift in Sources */,
+				E0884C87249A9D9C007B40F1 /* MockBaseCoordinator.swift in Sources */,
+				E0884C7E249A9A0C007B40F1 /* AppChildCoordinatorFactoryTests.swift in Sources */,
+				E0188A6224C25BE500EEAF43 /* MockItunesCoordinator.swift in Sources */,
+				E0188A5624C2554400EEAF43 /* AlbumDetailsViewTests.swift in Sources */,
+				E0188A4224C2475800EEAF43 /* StubGetMusicResponse.swift in Sources */,
+				E0884CA6249AAA58007B40F1 /* RequestTests.swift in Sources */,
+				E0188A6424C2600100EEAF43 /* ItunesAlbumCoordinatorTests.swift in Sources */,
+				E00F8DD4249A8E1600970FF3 /* AppCoordinatorTests.swift in Sources */,
+				E0884CCC249AB7C5007B40F1 /* UITestUtilities.swift in Sources */,
+				E09AA14D249BD4B700B0ED9A /* MockTableView.swift in Sources */,
+				E0884CA2249AA780007B40F1 /* HTTPMethodTests.swift in Sources */,
+				E0884CBC249AAFBB007B40F1 /* AlertablePresenterTests.swift in Sources */,
+				E0884C99249AA652007B40F1 /* CollectionExtensionTests.swift in Sources */,
+				E0884CE2249ACC0A007B40F1 /* UIAlertController+TestExtension.swift in Sources */,
+				E0884C91249A9EF0007B40F1 /* RouterTests.swift in Sources */,
+				E0884C95249A9F42007B40F1 /* MockNavigationController.swift in Sources */,
+				E0884CA4249AA9EC007B40F1 /* RequestDataTests.swift in Sources */,
+				E0188A5E24C259EE00EEAF43 /* MockAlbumDetailsChildCoordinatorFactory.swift in Sources */,
+				E0188A6024C25B9200EEAF43 /* MockAlbumDetailsPresentable.swift in Sources */,
+				E00F8DDD249A908400970FF3 /* MockStartupCoordinator.swift in Sources */,
+				E0884C83249A9D30007B40F1 /* BaseCoordinatorTests.swift in Sources */,
+				E0884CE0249AC588007B40F1 /* MockAlertController.swift in Sources */,
+				E0884C97249A9FA8007B40F1 /* LSAErrorTests.swift in Sources */,
+				E0884C8D249A9E3C007B40F1 /* BasePresentableFactoryTests.swift in Sources */,
+				E0188A5A24C2596F00EEAF43 /* AlbumDetailsCoordinatorTests.swift in Sources */,
+				E0884CA0249AA774007B40F1 /* NetworkPathTests.swift in Sources */,
+				E0188A5824C2579B00EEAF43 /* MockCachedImageView.swift in Sources */,
+				E0884CB5249AAEA3007B40F1 /* MockError.swift in Sources */,
+				E0884C93249A9F1A007B40F1 /* MockPresentable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E00D186F2496A48B001EED5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00D18562496A488001EED5D /* iTunesSampleApp */;
+			targetProxy = E00D186E2496A48B001EED5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E00D18652496A48B001EED5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E00D18662496A48B001EED5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E00D18742496A48B001EED5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E00D18752496A48B001EED5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E00D18772496A48B001EED5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X2YU7S2XU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = iTunesSampleApp/Properties/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diningwithrobots.iTunesSampleApp;
+				PRODUCT_NAME = iTunesSampleApp;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E00D18782496A48B001EED5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X2YU7S2XU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = iTunesSampleApp/Properties/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diningwithrobots.iTunesSampleApp;
+				PRODUCT_NAME = iTunesSampleApp;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E00D187A2496A48B001EED5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X2YU7S2XU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = iTunesSampleAppTests/Properties/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diningwithrobots.iTunesSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesSampleApp.app/iTunesSampleApp";
+			};
+			name = Debug;
+		};
+		E00D187B2496A48B001EED5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X2YU7S2XU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = iTunesSampleAppTests/Properties/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diningwithrobots.iTunesSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesSampleApp.app/iTunesSampleApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E00D18522496A488001EED5D /* Build configuration list for PBXProject "iTunesSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00D18742496A48B001EED5D /* Debug */,
+				E00D18752496A48B001EED5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00D18762496A48B001EED5D /* Build configuration list for PBXNativeTarget "iTunesSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00D18772496A48B001EED5D /* Debug */,
+				E00D18782496A48B001EED5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00D18792496A48B001EED5D /* Build configuration list for PBXNativeTarget "iTunesSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00D187A2496A48B001EED5D /* Debug */,
+				E00D187B2496A48B001EED5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E00D184F2496A488001EED5D /* Project object */;
+}
